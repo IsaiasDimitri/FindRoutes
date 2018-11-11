@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Find Routes</title>
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_kEY&libraries=places">
+    </script>
+    <script src="./controlRoute.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body onload="initialize()">
+    <div class="containerlvl1">
+      <div>
+      <div id="title">Buscador de Rotas</div>
+      <div id="searchBox" class="controls">
+        <input id="initialPoint" placeholder="Onde você está?" type="text">
+        <input id="finalPoint" placeholder="Onde quer ir?" type="text">
+        <button id="btnSearch">Procurar</button>
+      </div>
+      <div id="map" class="map" style="width: auto; height: 500px;"></div>
+    </div>
+    </div>
+  </body>
+</html>
